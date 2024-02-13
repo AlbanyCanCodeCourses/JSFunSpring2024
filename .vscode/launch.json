@@ -16,19 +16,6 @@
         "${workspaceFolder}/tests/01-variables/variables.spec.js"
       ],
       "internalConsoleOptions": "openOnSessionStart"
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "2. Numbers",
-      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
-      "args": [
-        "--timeout",
-        "999999",
-        "--colors",
-        "${workspaceFolder}/tests/02-numbers/numbers.spec.js"
-      ],
-      "internalConsoleOptions": "openOnSessionStart"
     }
   ]
 }
