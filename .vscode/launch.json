@@ -29,6 +29,19 @@
         "${workspaceFolder}/tests/02-numbers/numbers.spec.js"
       ],
       "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "03. Strings",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/tests/03-strings/strings.spec.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
     }
   ]
 }
