@@ -1,0 +1,56 @@
+<!--
+  To open this in Chrome, Edge, Safari, Firefox, or another browser:
+  1. Right click on this tab (05-combine-text.html) and select "Copy Path".
+  2. Open a new tab in your browser and paste the path in the address bar.
+  3. Refresh the page whenever you make a change.
+
+  Do not change any of the HTML. Scroll down to the <script> tags and only make changes where instructed to do so.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXERCISE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <form id="form" action="GET" class="container pt-5 mb-5">
+      <div class="mb-2">
+        <label for="firstName">First Name:</label>
+        <input id="firstName" type="text" />
+      </div>
+      <div class="mb-2">
+        <label for="lastName">Last Name:</label>
+        <input id="lastName" type="text" />
+      </div>
+      <button class="btn btn-primary" type="submit">Next</button>
+    </form>
+    <script>
+      /**
+       * Note: We will be going over a lot of what this code is doing later when we talk about the "DOM".
+       * For now, you just need to use what you've learned about strings to complete this exercise.
+       * If you get this exercise right, after entering your name and clicking "Next",
+       * you should see a popup that says "Hello YOUR_NAME"
+       */
+
+      // Do not change this.
+      !(function () {
+        document.querySelector("#form").addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          const firstName = document.querySelector("#firstName").value;
+          const lastName = document.querySelector("#lastName").value;
+
+          alert(`Hello ${firstName} ${lastName}`);
+        });
+      })();
+    </script>
+  </body>
+</html>
