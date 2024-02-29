@@ -1,0 +1,60 @@
+<!--
+  To open this in Chrome, Edge, Safari, Firefox, or another browser:
+  1. Right click on this tab (03-fix-coercion-input.html) and select "Copy Path".
+  2. Open a new tab in your browser and paste the path in the address bar.
+  3. Refresh the page whenever you make a change.
+
+  Do not change any of the HTML. Scroll down to the <script> tags and only make changes where instructed to do so.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXERCISE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <style>
+      #answer {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form" action="GET" class="container pt-5 mb-5">
+      <input id="a" type="number" value="0" />
+      +
+      <input id="b" type="number" value="0" />
+      =
+      <span class="border rounded-1 bg-light py-1 px-2" id="answer">0</span>
+    </form>
+    <script>
+      /**
+       * Note: We will be going over a lot of what this code is doing later when we talk about the "DOM".
+       * For now, you just need to use what you've learned about coercion to complete this exercise.
+       * If you get this exercise right, it should add the two inputs and display the results on the screen.
+       */
+
+      // Do not change this.
+      !(function () {
+        Object.values(document.querySelectorAll("input")).forEach((input) => {
+          input.addEventListener("input", () => {
+            // These two lines below are getting the text from the textboxes.
+            // When you get any text from textboxes, it is always of type string
+            const num1 = document.querySelector("#a").value || "";
+            const num2 = document.querySelector("#b").value || "";
+
+            const sum = parseFloat(num1) + parseFloat(num2); // Fix this line so that it adds the two numbers together instead of combining a string
+
+            document.querySelector("#answer").textContent = sum || "-";
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
