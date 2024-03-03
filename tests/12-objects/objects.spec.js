@@ -8,7 +8,7 @@ import {
   combineObjects,
 } from "./objects-test-helper.js";
 
-describe("11. Objects", () => {
+describe("Objects", () => {
   describe("01-create-object", () => {
     it('should contain an object called "myDog"', () => {
       const myDog = createDogObject();
