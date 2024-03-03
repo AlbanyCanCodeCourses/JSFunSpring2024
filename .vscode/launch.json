@@ -107,6 +107,19 @@
         "${workspaceFolder}/tests/08-functions/functions.spec.js"
       ],
       "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "09. Arrays",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/tests/09-arrays/arrays-sets.spec.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
     }
   ]
 }
