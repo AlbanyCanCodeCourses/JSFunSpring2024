@@ -8,7 +8,7 @@ import {
   isPalindrome,
 } from "./loops-test-helper.js";
 
-describe("10. Loops", () => {
+describe("Loops", () => {
   describe("01-array-length", () => {
     it("should return the length of the array supplied as an argument", () => {
       expect(arrayLength([1, 2, 3, 4, 5, 6])).to.equal(6);
