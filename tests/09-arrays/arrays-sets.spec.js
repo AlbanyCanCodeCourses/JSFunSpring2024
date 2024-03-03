@@ -8,7 +8,7 @@ import {
   combineArrays,
 } from "./arrays-sets-test-helper.js";
 
-describe("10. Arrays", () => {
+describe("Arrays", () => {
   describe("01-create-an-array", () => {
     it('should contain an array called "restaurants"', () => {
       const restaurants = createAnArray();

@@ -1,27 +1,27 @@
 import { getAnswer } from "../getAnswer.js";
 
 const createAnArrayStr = getAnswer(
-  "../exercises/10-arrays/01-create-an-array.js"
+  "../exercises/09-arrays/01-create-an-array.js"
 );
 
 const accessingAnItemStr = getAnswer(
-  "../exercises/10-arrays/02-accessing-item-in-array.js"
+  "../exercises/09-arrays/02-accessing-item-in-array.js"
 );
 
 const destructuringStr = getAnswer(
-  "../exercises/10-arrays/03-destructuring.js"
+  "../exercises/09-arrays/03-destructuring.js"
 );
 
 const getPositionInArrayStr = getAnswer(
-  "../exercises/10-arrays/04-position-in-array.js"
+  "../exercises/09-arrays/04-position-in-array.js"
 );
 
 const addItemToArrayStr = getAnswer(
-  "../exercises/10-arrays/05-add-item-to-array.js"
+  "../exercises/09-arrays/05-add-item-to-array.js"
 );
 
 const combineArraysStr = getAnswer(
-  "../exercises/10-arrays/06-combine-arrays-.js"
+  "../exercises/09-arrays/06-combine-arrays-.js"
 );
 
 export const createAnArray = eval(`() => {
