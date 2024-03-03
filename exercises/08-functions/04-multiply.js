@@ -9,9 +9,9 @@
  * @param {number} num2
  * @returns {number} num1 x num2
  *
- * @example timesFive(5); // 25
- * @example timesFive(2); // 10
- * @example timesFive(0); // 0
+ * @example multiply(2.5, 2); // 5
+ * @example multiple(7, 8); // 40
+ * @example timesFive(-1, 7); // -7
  * You should use arrow syntax.
  */
 
