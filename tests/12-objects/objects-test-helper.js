@@ -16,12 +16,8 @@ const updateStudentObjectStr = getAnswer(
   "../exercises/12-objects/04-update-object.js"
 );
 
-const returnObjectValuesStr = getAnswer(
-  "../exercises/12-objects/05-return-object-values.js"
-);
-
 const combineObjectsStr = getAnswer(
-  "../exercises/12-objects/06-combine-object.js"
+  "../exercises/12-objects/05-combine-object.js"
 );
 
 export const createDogObject = eval(`() => {
@@ -43,11 +39,6 @@ export const accessAnItemObject = eval(`(clothes) => {
 export const updateStudentObject = eval(`(student) => {
   ${updateStudentObjectStr}
   return student;
-}`);
-
-export const returnObjectValues = eval(`(blogPost) => {
-  ${returnObjectValuesStr}
-  return values;
 }`);
 
 export const combineObjects = eval(`(obj1, obj2) => {
