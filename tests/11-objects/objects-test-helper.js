@@ -1,23 +1,23 @@
 import { getAnswer } from "../getAnswer.js";
 
 const createDogObjectStr = getAnswer(
-  "../exercises/12-objects/01-create-object.js"
+  "../exercises/11-objects/01-create-object.js"
 );
 
 const createGraduateObjectStr = getAnswer(
-  "../exercises/12-objects/02-create-nested-object.js"
+  "../exercises/11-objects/02-create-nested-object.js"
 );
 
 const accessAnItemObjectStr = getAnswer(
-  "../exercises/12-objects/03-accessing-item-in-object.js"
+  "../exercises/11-objects/03-accessing-item-in-object.js"
 );
 
 const updateStudentObjectStr = getAnswer(
-  "../exercises/12-objects/04-update-object.js"
+  "../exercises/11-objects/04-update-object.js"
 );
 
 const combineObjectsStr = getAnswer(
-  "../exercises/12-objects/05-combine-object.js"
+  "../exercises/11-objects/05-combine-object.js"
 );
 
 export const createDogObject = eval(`() => {

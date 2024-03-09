@@ -142,7 +142,7 @@
         "--timeout",
         "999999",
         "--colors",
-        "${workspaceFolder}/tests/12-objects/objects.spec.js"
+        "${workspaceFolder}/tests/11-objects/objects.spec.js"
       ],
       "internalConsoleOptions": "openOnSessionStart"
     }
