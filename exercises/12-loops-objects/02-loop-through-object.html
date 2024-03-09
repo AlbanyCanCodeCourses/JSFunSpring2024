@@ -1,0 +1,76 @@
+<!--
+  To open this in Chrome, Edge, Safari, Firefox, or another browser:
+  1. Right click on this tab (02-loop-through-object.html) and select "Copy Path".
+  2. Open a new tab in your browser and paste the path in the address bar.
+  3. Refresh the page whenever you make a change.
+
+  Do not change any of the HTML. Scroll down to the <script> tags and only make changes where instructed to do so.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXERCISE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container pt-5 mb-5">
+      <h1>Now Playing</h1>
+      <ul id="list" class="list-group"></ul>
+    </div>
+    <script>
+      /**
+       * Note: We will be going over a lot of what this code is doing later when we talk about the "DOM".
+       * For now, you just need to use what you've learned about objects and loops to complete this exercise.
+       * If you get this exercise right, it should display a list of all the movies,
+       * where each movie has a title and description.
+       */
+
+      // Do not change this.
+      !(function () {
+        const movies = {
+          "halloween-ends": {
+            title: "Halloween Ends",
+            description:
+              "The saga of Michael Myers and Laurie Strode comes to a spine-chilling climax in the final installment of this trilogy.",
+          },
+          till: {
+            title: "Till",
+            description:
+              "In 1955, after Emmett Till is murdered in a brutal lynching, his mother vows to expose the racism behind the attack while working to have those involved brought to justice.",
+          },
+          "black-adam": {
+            title: "Black Adam",
+            description:
+              "Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods - and imprisoned just as quickly - Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world.",
+          },
+        };
+
+        const list = document.querySelector("#list");
+
+        /**
+         * Loop through the object "movies" below.
+         * The code below should go inside the loop.
+         * Change the code below so that it will work for the other movies too.
+         */
+        let movie = movies["halloween-ends"];
+        const htmlString = `<li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">${movie.title}</div>
+            ${movie.description}
+          </div>
+        </li>`;
+        list.insertAdjacentHTML("beforeend", htmlString);
+
+        // Do not change anything below this line.
+      })();
+    </script>
+  </body>
+</html>
