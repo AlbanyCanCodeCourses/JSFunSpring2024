@@ -1,0 +1,78 @@
+<!--
+  To open this in Chrome, Edge, Safari, Firefox, or another browser:
+  1. Right click on this tab (04-loops.html) and select "Copy Path".
+  2. Open a new tab in your browser and paste the path in the address bar.
+  3. Refresh the page whenever you make a change.
+
+  Do not change any of the HTML. Scroll down to the <script> tags and only make changes where instructed to do so.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXERCISE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container pt-5 mb-5">
+      <table class="table">
+        <thead>
+          <th>Place</th>
+          <th>Name</th>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+    <script>
+      /**
+       * Note: We will be going over a lot of what this code is doing later when we talk about the "DOM".
+       * For now, you just need to use what you've learned about arrays to complete this exercise.
+       * If you get this exercise right, you should see a table of names with 15 rows
+       * and the first place should begin with "1" instead of "0".
+       */
+
+      // Do not change this.
+      !(function () {
+        const results = [
+          "Hannah Ahmed",
+          "Chun Yu",
+          "Mathew Fuller",
+          "Leandro Campana",
+          "Georgine St Pierre",
+          "Gabriel Zimmerman",
+          "Kristina Straub",
+          "Mikhael Moshe",
+          "Nishant Patel",
+          "Xue Chong",
+          "Tomoko Matsushita",
+          "Valentin Kovalev",
+          "Débora Meléndez",
+          "Bridget Kavanah",
+          "Mwenya Arendse",
+        ];
+
+        const tableBody = document.querySelector("#tableBody");
+
+        const addToTable = (place, name) => {
+          const htmlString = `<tr><td>${place}</td><td>${name}</td></tr>`;
+          tableBody.insertAdjacentHTML('beforeend', htmlString);
+        };
+
+        // Right now, this only adds the first person in the "results" array to the table.
+        // Create a loop here and use this function within the loop
+        // to add every person's name to the table.
+        for (let i = 0; i < results.length; i++) {
+          const place = i + 1;
+          addToTable(place, results[i]); // Change me. This should be inside your loop.
+        }
+      })();
+    </script>
+  </body>
+</html>
