@@ -184,6 +184,19 @@
         "${workspaceFolder}/tests/17-callbacks/callbacks.spec.js"
       ],
       "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "18. forEach",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/tests/18-for-each/for-each.spec.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
     }
   ]
 }
