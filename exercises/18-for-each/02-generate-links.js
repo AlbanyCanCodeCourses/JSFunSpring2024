@@ -15,7 +15,7 @@ const links = [
  *
  * @example
  * // After you solve this problem, "htmlStr" should equal:
- * <a href="http://speakingjs.com/es5/ch04.html"> 1. http://speakingjs.com/es5/ch04.html</a><a href="https://www.ecma-international.org/">2. https://www.ecma-international.org/</a><a href="https://books.google.com/books?id=2weL0iAfrEMC">3. https://books.google.com/books?id=2weL0iAfrEMC</a>
+ * <a href="http://speakingjs.com/es5/ch04.html">1. http://speakingjs.com/es5/ch04.html</a><a href="https://www.ecma-international.org/">2. https://www.ecma-international.org/</a><a href="https://books.google.com/books?id=2weL0iAfrEMC">3. https://books.google.com/books?id=2weL0iAfrEMC</a>
  *
  * HINT: You will need to use the index in the array to solve this problem.
  *
