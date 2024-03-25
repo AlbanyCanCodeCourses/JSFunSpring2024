@@ -24,23 +24,29 @@ This project will put together these topics that were covered in class:
 
 ## Getting Started
 
-You will need to [create a new public Github repository](https://help.github.com/en/articles/create-a-repo) for this project. Name your new repository "hangman". Once the new repository is set up, [clone the Github repository](https://help.github.com/en/articles/cloning-a-repository). Then type `cd hangman` in either your terminal or Git Bash.
+[Fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository) the [AlbanyCanCode's HangmanProject repository](https://github.com/AlbanyCanCodeCourses/HangmanProject), [clone your forked repository](https://help.github.com/en/articles/cloning-a-repository), and open it in Visual Studio Code (or you preferred editor).
 
-Inside this folder, create a new file called _package.json_. Inside the file, copy and paste the following. Replace where is says `<YOUR NAME>` with your name and `<YOUR USERNAME>` with your Github username.
+In the Visual Studio Code's terminal, type:
+
+```shell
+npm init
+```
+
+The `npm init -y` command generates the _package.json_ file. Open it and add `"type": "module",` below the line with the version. Here is a sample of what _package.json_ should look like. Replace where is says `<YOUR NAME>` with your name and `<YOUR USERNAME>` with your Github username.
 
 ```json
 {
-  "name": "hangman",
+  "name": "hangman-project",
   "version": "1.0.0",
   "engine": {
-    "node": "^18.18"
+    "node": "^20.11" // Optional
   },
   "type": "module",
   "main": "index.js",
-  "author": "<YOUR NAME>",
+  "author": "<YOUR NAME>", // Optional
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/<YOUR USERNAME>/hangman.git"
+    "type": "git", // Optional
+    "url": "git+https://github.com/<YOUR USERNAME>/HangmanProject.git" // Optional
   }
 }
 ```
@@ -53,9 +59,9 @@ npm install --save readline-sync
 
 However, you are welcome to use Node's built in _[readline](https://nodejs.org/docs/latest-v20.x/api/readline.html)_ module or [any other library](https://www.npmjs.com/search?q=prompt) of your choice.
 
-Inside the _JSFunSpring2024_ repository, we have created a word bank file for you. This is the list of all the possible words that the computer can pick at random. Copy the _projects/hangman/word-bank.js_ file and paste it into your new repository.
+Inside the repository you cloned, we have created a word bank file for you. This is the list of all the possible words that the computer can pick at random.
 
-Create a new file called _index.js_. This is the main file for your first project. You will be writing your code in this file. The first two lines should look like this:
+Open the file*index.js*. This is the main file for your first project. You will be writing your code in this file. The first two lines should look like this:
 
 ```javascript
 import prompt from "readline-sync";
@@ -64,7 +70,7 @@ import wordBank from "./word-bank.js";
 
 The first line will include the _readline-sync_ library. The second will import all the words from our word bank into an array.
 
-Create a file called _.gitignore_ inside of the root of your project. It contains all the folder and files that you do not want to publish to git. You should ignore the _node_modules_ folder like this:
+Create a file called _.gitignore_ inside of the root of your project. It contains all the folder and files that you do not want to publish to git. You should ignore the `node_modules` folder like this:
 
 ```
 node_modules/
