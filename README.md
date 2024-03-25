@@ -32,6 +32,7 @@ npm install
 
 ## Resources
 
+- [Hangman Project](projects/hangman/ProjectHangman.md)
 - Installation Guide: [Mac](docs/InstallationGuideMac.md) | [Windows](docs/InstallationGuideWindows.md) | [Linux](docs/InstallationGuideLinuxAndNVM.md)
 - JavaScript - [MDN](https://developer.mozilla.org/en-US/) (Unofficial JavaScript Manual) | [Tutorials](https://javascript.info/)
 - Command Line: [Command line crash course](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line) | [Unix Cheat Sheet](https://www.guru99.com/linux-commands-cheat-sheet.html) | [NPM Guide](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
